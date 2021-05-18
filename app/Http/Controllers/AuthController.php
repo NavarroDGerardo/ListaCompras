@@ -30,7 +30,7 @@ class AuthController extends Controller
         $data['password'] = Hash::make($data['password']);
 
         User::create($data);
-        return redirect()->route('lista.index');
+        return redirect()->route('auth.login');
     }
 
     public function login(Request $request){

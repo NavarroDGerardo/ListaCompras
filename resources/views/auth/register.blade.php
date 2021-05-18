@@ -37,7 +37,7 @@
                             <label for="password">Confirm Password </label>
                         </td>
                         <td>
-                            <input type="password" name="password_confirmation" id="password" placeholder="**********" required/>
+                            <input type="password" name="password_confirmation" id="passwordC" placeholder="**********" required/>
                         </td>
                     </tr>
                 </tbody>
