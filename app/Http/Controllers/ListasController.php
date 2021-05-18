@@ -95,6 +95,7 @@ class ListasController extends Controller
     public function destroy($id)
     {
         $lista = Lista::find($id);
+        $lista->productos()->delete();
         $lista->delete();
         return ['message'=>'lista borrada'];
     }

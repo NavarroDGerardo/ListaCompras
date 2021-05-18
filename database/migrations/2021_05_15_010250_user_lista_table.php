@@ -17,7 +17,7 @@ class UserListaTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('lista_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('lista_id')->references('id')->on('listas')->onDelete('cascade');
             $table->timestamps();
         });
